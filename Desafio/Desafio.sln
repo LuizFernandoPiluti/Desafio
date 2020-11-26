@@ -3,24 +3,58 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 16
 VisualStudioVersion = 16.0.29926.136
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Desafio.Aplicacao", "Desafio.Aplicacao", "{7E5E402E-8FD7-4AAC-B462-3A79D091312A}"
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "3.0 Desafio.Aplicacao", "3.0 Desafio.Aplicacao", "{7E5E402E-8FD7-4AAC-B462-3A79D091312A}"
 EndProject
-Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Desafio.Apresentacao", "Desafio.Apresentacao", "{7190E356-7F9E-4A4B-9C5E-9A8373D0DBC5}"
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "4.0 Desafio.Apresentacao", "4.0 Desafio.Apresentacao", "{7190E356-7F9E-4A4B-9C5E-9A8373D0DBC5}"
 EndProject
-Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Desafio.Infraestrutura", "Desafio.Infraestrutura", "{09689A7A-7298-4DA6-AD91-E86D859D8AD5}"
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "2.0 Desafio.Infraestrutura", "2.0 Desafio.Infraestrutura", "{09689A7A-7298-4DA6-AD91-E86D859D8AD5}"
 EndProject
-Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Desafio.Teste", "Desafio.Teste", "{44297C3D-D2D5-4D8C-A4A1-AF2081800537}"
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "5.0 Desafio.Teste", "5.0 Desafio.Teste", "{44297C3D-D2D5-4D8C-A4A1-AF2081800537}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Desafio.Infraestrutura.Dados", "Desafio.Infraestrutura.Dados", "{A48F686C-3F83-4BEA-BA08-C43E223D671F}"
 EndProject
-Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Desafio.Dominio", "Desafio.Dominio", "{93CD46E2-853E-4DB3-AD8C-F27E0CD7C3BE}"
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "1.0 Desafio.Dominio", "1.0 Desafio.Dominio", "{93CD46E2-853E-4DB3-AD8C-F27E0CD7C3BE}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Desafio.Dominio", "Desafio.Dominio\Desafio.Dominio.csproj", "{DA8B643A-9EC4-4779-A7A8-5684A58119F7}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Desafio.Aplicacao", "Desafio.Aplicacao\Desafio.Aplicacao.csproj", "{D77028CB-AC13-42D1-B39E-DF900C3ECE9D}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Desafio.Apresentacao.WebApi", "Desafio.Apresentacao.WebApi\Desafio.Apresentacao.WebApi.csproj", "{F684759D-1FAC-4896-BED7-336BBF95EC70}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Desafio.Teste", "Desafio.Teste\Desafio.Teste.csproj", "{7CBEB971-24A0-4399-B80C-64FE75990D12}"
 EndProject
 Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{DA8B643A-9EC4-4779-A7A8-5684A58119F7}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{DA8B643A-9EC4-4779-A7A8-5684A58119F7}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{DA8B643A-9EC4-4779-A7A8-5684A58119F7}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{DA8B643A-9EC4-4779-A7A8-5684A58119F7}.Release|Any CPU.Build.0 = Release|Any CPU
+		{D77028CB-AC13-42D1-B39E-DF900C3ECE9D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D77028CB-AC13-42D1-B39E-DF900C3ECE9D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{D77028CB-AC13-42D1-B39E-DF900C3ECE9D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{D77028CB-AC13-42D1-B39E-DF900C3ECE9D}.Release|Any CPU.Build.0 = Release|Any CPU
+		{F684759D-1FAC-4896-BED7-336BBF95EC70}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F684759D-1FAC-4896-BED7-336BBF95EC70}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F684759D-1FAC-4896-BED7-336BBF95EC70}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F684759D-1FAC-4896-BED7-336BBF95EC70}.Release|Any CPU.Build.0 = Release|Any CPU
+		{7CBEB971-24A0-4399-B80C-64FE75990D12}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{7CBEB971-24A0-4399-B80C-64FE75990D12}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{7CBEB971-24A0-4399-B80C-64FE75990D12}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{7CBEB971-24A0-4399-B80C-64FE75990D12}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
 	EndGlobalSection
 	GlobalSection(NestedProjects) = preSolution
 		{A48F686C-3F83-4BEA-BA08-C43E223D671F} = {09689A7A-7298-4DA6-AD91-E86D859D8AD5}
+		{DA8B643A-9EC4-4779-A7A8-5684A58119F7} = {93CD46E2-853E-4DB3-AD8C-F27E0CD7C3BE}
+		{D77028CB-AC13-42D1-B39E-DF900C3ECE9D} = {7E5E402E-8FD7-4AAC-B462-3A79D091312A}
+		{F684759D-1FAC-4896-BED7-336BBF95EC70} = {7190E356-7F9E-4A4B-9C5E-9A8373D0DBC5}
+		{7CBEB971-24A0-4399-B80C-64FE75990D12} = {44297C3D-D2D5-4D8C-A4A1-AF2081800537}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {54A26436-7D58-4B84-96F2-E2F5C9A854CF}
