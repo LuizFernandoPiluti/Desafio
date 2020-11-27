@@ -7,6 +7,7 @@ using System.Threading.Tasks;
 using Desafio.Aplicacao;
 using Desafio.Dominio.Contratos;
 using Desafio.Dominio.Entidades;
+using Desafio.Dominio.Interfaces;
 using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
 
@@ -16,9 +17,12 @@ namespace Desafio.Apresentacao.WebApi.Controllers
     [ApiController]
     public class SalaController : ControllerBase
     {
-        protected readonly ServicoAplicacaoDados<Sala> _aplicacaoSala;
-        protected readonly ServicoAplicacaoDados<TipoSala> _aplicacaoTipoSala;
-        protected readonly ServicoAplicacaoDados<TamanhoSala> _aplicacaoTamanhoSala;
+        protected readonly IServicoAplicacaoDados<Sala> _aplicacaoSala;
+
+        public SalaController(IServicoAplicacaoDados<Sala> servicoAplicacaoDados)
+        {
+            _aplicacaoSala = servicoAplicacaoDados;
+        }
         // GET: api/Sala
         [HttpGet]
         public ActionResult Get()
@@ -30,7 +34,7 @@ namespace Desafio.Apresentacao.WebApi.Controllers
 
                 List<SalaBase> list = new List<SalaBase>();
 
-                if (salas != null)
+                if (salas != null && salas.Count  >0)
                 {
                     foreach (var sala in salas)
                     {
@@ -41,7 +45,7 @@ namespace Desafio.Apresentacao.WebApi.Controllers
                 }
                 else
                 {
-                    return BadRequest("Tipo de sala invalido");
+                    return NotFound("Nenhuma sala localizada");
                 }
 
             }
@@ -66,7 +70,7 @@ namespace Desafio.Apresentacao.WebApi.Controllers
                 }
                 else
                 {
-                    return BadRequest("Tipo de sala invalido");
+                    return NotFound("Sala não localizada");
                 }
                
             }
@@ -82,21 +86,10 @@ namespace Desafio.Apresentacao.WebApi.Controllers
         {
             try
             {
-                var tipo = _aplicacaoTipoSala.RecuperarTodos().Where(x => x.DescricaoTipoSala.ToLower().Trim().Equals(sala.TipoSala.ToLower().Trim())).FirstOrDefault();
 
-                if (tipo == null)
-                {
-                    return BadRequest("Tipo de sala invalido");
-                }
-
-                var tamanho = _aplicacaoTamanhoSala.RecuperarTodos().Where(x => x.DescricaoTamanhoSala.ToLower().Trim().Equals(sala.TamanhoSala.ToLower().Trim())).FirstOrDefault();
-
-                if (tamanho == null)
-                {
-                    return BadRequest("Tamanho de sala invalido");
-                }
-                _aplicacaoSala.Inserir(SalaMapeamento.Map(sala, tipo, tamanho));
-                return StatusCode(201);
+                var salaDomain = SalaMapeamento.Map(sala);
+                _aplicacaoSala.Inserir(salaDomain);
+                return StatusCode(201, salaDomain);
             }
             catch (Exception)
             {
@@ -119,24 +112,16 @@ namespace Desafio.Apresentacao.WebApi.Controllers
                     return BadRequest("Sala não localizada");
                 }
 
-                var tipo = _aplicacaoTipoSala.RecuperarTodos().Where(x => x.DescricaoTipoSala.ToLower().Trim().Equals(sala.TipoSala.ToLower().Trim())).FirstOrDefault();
 
-                if (tipo == null)
-                {
-                    return BadRequest("Tipo de sala invalido");
-                }
+                salaDomain.NomeSala = sala.sala;
+                salaDomain.CodigoSala = sala.cod_sala;
+                salaDomain.OrdemMatriz = sala.ordem_matriz;
+                salaDomain.TipoSala = sala.tipo_sala;
+                salaDomain.TamanhoSala = sala.tamanho_sala;
 
-                var tamanho = _aplicacaoTamanhoSala.RecuperarTodos().Where(x => x.DescricaoTamanhoSala.ToLower().Trim().Equals(sala.TamanhoSala.ToLower().Trim())).FirstOrDefault();
-
-                if (tamanho == null)
-                {
-                    return BadRequest("Tamanho de sala invalido");
-                }
-
-                sala.Id = salaDomain.IdSala;
-
-                _aplicacaoSala.Alterar(SalaMapeamento.Map(sala, tipo, tamanho));
-                return StatusCode(201);
+            
+                _aplicacaoSala.Alterar(salaDomain);
+                return StatusCode(200, salaDomain);
             }
             catch (Exception)
             {
@@ -152,7 +137,7 @@ namespace Desafio.Apresentacao.WebApi.Controllers
             try
             {
                 _aplicacaoSala.Remover(id);
-                return StatusCode(201);
+                return StatusCode(200);
             }
             catch (Exception)
             {

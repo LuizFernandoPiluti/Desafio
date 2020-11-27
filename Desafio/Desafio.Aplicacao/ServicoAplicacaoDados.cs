@@ -9,6 +9,12 @@ namespace Desafio.Aplicacao
     public class ServicoAplicacaoDados<TObject> : IServicoAplicacaoDados<TObject> where TObject : class
     {
         protected readonly IRepositorioBase<TObject> _repositorioBase;
+
+        public ServicoAplicacaoDados(IRepositorioBase<TObject> repositorioBase)
+        {
+            _repositorioBase = repositorioBase;
+        }
+
         public void Alterar(TObject obj)
         {
             try

@@ -94,6 +94,9 @@
               },
               "D:\\Projetos\\Desafio\\Desafio\\Desafio.Dominio\\Desafio.Dominio.csproj": {
                 "projectPath": "D:\\Projetos\\Desafio\\Desafio\\Desafio.Dominio\\Desafio.Dominio.csproj"
+              },
+              "D:\\Projetos\\Desafio\\Desafio\\Desafio.Infraestrutura.Dados\\Desafio.Infraestrutura.Dados.csproj": {
+                "projectPath": "D:\\Projetos\\Desafio\\Desafio\\Desafio.Infraestrutura.Dados\\Desafio.Infraestrutura.Dados.csproj"
               }
             }
           }
@@ -107,6 +110,12 @@
       "frameworks": {
         "netcoreapp3.1": {
           "dependencies": {
+            "Microsoft.EntityFrameworkCore.Tools": {
+              "include": "Runtime, Build, Native, ContentFiles, Analyzers, BuildTransitive",
+              "suppressParent": "All",
+              "target": "Package",
+              "version": "[5.0.0, )"
+            },
             "Microsoft.VisualStudio.Web.CodeGeneration.Design": {
               "target": "Package",
               "version": "[3.1.4, )"
@@ -178,6 +187,91 @@
             "Newtonsoft.Json": {
               "target": "Package",
               "version": "[12.0.3, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\3.1.201\\RuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "D:\\Projetos\\Desafio\\Desafio\\Desafio.Infraestrutura.Dados\\Desafio.Infraestrutura.Dados.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "D:\\Projetos\\Desafio\\Desafio\\Desafio.Infraestrutura.Dados\\Desafio.Infraestrutura.Dados.csproj",
+        "projectName": "Desafio.Infraestrutura.Dados",
+        "projectPath": "D:\\Projetos\\Desafio\\Desafio\\Desafio.Infraestrutura.Dados\\Desafio.Infraestrutura.Dados.csproj",
+        "packagesPath": "C:\\Users\\Piluti\\.nuget\\packages\\",
+        "outputPath": "D:\\Projetos\\Desafio\\Desafio\\Desafio.Infraestrutura.Dados\\obj\\",
+        "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
+        ],
+        "configFilePaths": [
+          "C:\\Users\\Piluti\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "netcoreapp3.1"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "netcoreapp3.1": {
+            "projectReferences": {
+              "D:\\Projetos\\Desafio\\Desafio\\Desafio.Dominio\\Desafio.Dominio.csproj": {
+                "projectPath": "D:\\Projetos\\Desafio\\Desafio\\Desafio.Dominio\\Desafio.Dominio.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "netcoreapp3.1": {
+          "dependencies": {
+            "Microsoft.EntityFrameworkCore": {
+              "target": "Package",
+              "version": "[5.0.0, )"
+            },
+            "Microsoft.EntityFrameworkCore.Relational": {
+              "target": "Package",
+              "version": "[5.0.0, )"
+            },
+            "Microsoft.EntityFrameworkCore.SqlServer": {
+              "target": "Package",
+              "version": "[5.0.0, )"
+            },
+            "Microsoft.Extensions.Configuration": {
+              "target": "Package",
+              "version": "[5.0.0, )"
+            },
+            "Microsoft.Extensions.Configuration.FileExtensions": {
+              "target": "Package",
+              "version": "[5.0.0, )"
+            },
+            "Microsoft.Extensions.Configuration.Json": {
+              "target": "Package",
+              "version": "[5.0.0, )"
             }
           },
           "imports": [

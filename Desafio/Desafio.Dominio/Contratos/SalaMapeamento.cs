@@ -12,28 +12,28 @@ namespace Desafio.Dominio.Contratos
         {
             return new SalaBase
             {
-                CodigoSala = sala.CodigoSala,
-                NomeSala = sala.NomeSala,
-                OrdemMatriz = sala.OrdemMatriz,
-                TipoSala = sala.TipoSala.DescricaoTipoSala,
-                TamanhoSala = sala.TamanhoSala.DescricaoTamanhoSala
+                Id = sala.IdSala,
+                cod_sala = sala.CodigoSala,
+                sala = sala.NomeSala,
+                ordem_matriz = sala.OrdemMatriz,
+                tipo_sala = sala.TipoSala,
+                tamanho_sala = sala.TamanhoSala
             };
         }
 
-        public static Sala Map(SalaBase sala, TipoSala tipo, TamanhoSala tamanho)
+        public static Sala Map(SalaBase sala)
         {
             if (sala.Id > 0)
             {
                 return new Sala
                 {
                     IdSala = sala.Id,
-                    CodigoSala = sala.CodigoSala,
-                    NomeSala = sala.NomeSala,
-                    OrdemMatriz = sala.OrdemMatriz,
-                    IdTipoSala = tipo.IdTipoSala,
-                    IdTamanhoSala = tamanho.IdTamanhoSala,
-                    TipoSala = tipo,
-                    TamanhoSala = tamanho
+                    CodigoSala = sala.cod_sala,
+                    NomeSala = sala.sala,
+                    OrdemMatriz = sala.ordem_matriz,
+                    TipoSala = sala.tipo_sala,
+                    TamanhoSala = sala.tamanho_sala
+              
                 };
             }
             else
@@ -41,13 +41,11 @@ namespace Desafio.Dominio.Contratos
                 return new Sala
                 {
 
-                    CodigoSala = sala.CodigoSala,
-                    NomeSala = sala.NomeSala,
-                    OrdemMatriz = sala.OrdemMatriz,
-                    IdTipoSala = tipo.IdTipoSala,
-                    IdTamanhoSala = tamanho.IdTamanhoSala,
-                    TipoSala = tipo,
-                    TamanhoSala = tamanho
+                    CodigoSala = sala.cod_sala,
+                    NomeSala = sala.sala,
+                    OrdemMatriz = sala.ordem_matriz,
+                    TipoSala = sala.tipo_sala,
+                    TamanhoSala = sala.tamanho_sala
                 };
             }
 

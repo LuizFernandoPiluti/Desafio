@@ -11,18 +11,18 @@ namespace Desafio.Dominio.Contratos
     {
         public int Id { get; set; }
         [JsonProperty(PropertyName = "cod_sala")]
-        public string CodigoSala { get; set; }
+        public string cod_sala { get; set; }
 
         [JsonProperty(PropertyName = "sala")]
-        public string NomeSala { get; set; }
+        public string sala { get; set; }
 
         [JsonProperty(PropertyName = "ordem_matriz")]
-        public int OrdemMatriz { get; set; }
+        public int ordem_matriz { get; set; }
 
         [JsonProperty(PropertyName = "tipo_sala")]
-        public string TipoSala { get; set; }
+        public string tipo_sala { get; set; }
 
         [JsonProperty(PropertyName = "tamanho_sala")]
-        public string TamanhoSala { get; set; }
+        public string tamanho_sala { get; set; }
     }
 }

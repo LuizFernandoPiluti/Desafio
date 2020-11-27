@@ -13,8 +13,11 @@ namespace Desafio.Infraestrutura.Dados.Configuracao
             builder.Property(m => m.IdSala).HasColumnName("id_sala").ValueGeneratedOnAdd();
             builder.Property(m => m.CodigoSala).HasColumnName("codigo_sala").HasMaxLength(50);
             builder.Property(m => m.NomeSala).HasColumnName("nome_sala").HasMaxLength(255);
-            builder.HasOne(m => m.TipoSala).WithMany().HasForeignKey(m => m.IdTipoSala);
-            builder.HasOne(m => m.TamanhoSala).WithMany().HasForeignKey(m => m.IdTamanhoSala);
+            builder.Property(m => m.TamanhoSala).HasColumnName("tamanho_sala").HasMaxLength(50); ;
+            builder.Property(m => m.TipoSala).HasColumnName("tipo_sala").HasMaxLength(100); ;
+            builder.Property(m => m.OrdemMatriz).HasColumnName("ordem_matriz");
+
+         
 
 
         }

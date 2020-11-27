@@ -7,11 +7,9 @@ namespace Desafio.Dominio.Entidades
         public string CodigoSala { get; set; }
         public string NomeSala { get; set; }
         public int OrdemMatriz { get; set; }
-        public int IdTipoSala { get; set; }
-        public int IdTamanhoSala { get; set; }
-        public virtual TipoSala TipoSala { get; set; }
-        public virtual TamanhoSala TamanhoSala { get; set; }
-        
+        public string TipoSala { get; set; }
+        public string TamanhoSala { get; set; }
+  
 
 
     }

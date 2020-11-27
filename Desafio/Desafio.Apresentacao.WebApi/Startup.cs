@@ -2,6 +2,11 @@ using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
+using Desafio.Aplicacao;
+using Desafio.Dominio.Entidades;
+using Desafio.Dominio.Interfaces;
+using Desafio.Infraestrutura.Dados;
+using Desafio.Infraestrutura.Dados.Contexto;
 using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Hosting;
 using Microsoft.AspNetCore.HttpsPolicy;
@@ -25,6 +30,19 @@ namespace Desafio.Apresentacao.WebApi
         // This method gets called by the runtime. Use this method to add services to the container.
         public void ConfigureServices(IServiceCollection services)
         {
+            services.AddScoped<ContextoBaseDados>();
+
+            services.AddTransient<IRepositorioBase<Sala>, RepositorioBase<Sala>>();
+      
+            services.AddTransient<IServicoAplicacaoDados<Sala>, ServicoAplicacaoDados<Sala>>();
+   
+
+            //publicação
+            services.Configure<IISOptions>(o =>
+            {
+                o.ForwardClientCertificate = false;
+            });
+
             services.AddControllers();
             services.AddSwaggerGen();
         }

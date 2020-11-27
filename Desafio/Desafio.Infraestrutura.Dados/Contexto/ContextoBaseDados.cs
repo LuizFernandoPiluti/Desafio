@@ -21,8 +21,7 @@ namespace Desafio.Infraestrutura.Dados.Contexto
             modelBuilder.ApplyConfiguration(new SalaMap());
             modelBuilder.ApplyConfiguration(new TipoSalaMap());
             modelBuilder.ApplyConfiguration(new TamanhoSalaMap());
-       
-
+     
 
             base.OnModelCreating(modelBuilder);
         }
