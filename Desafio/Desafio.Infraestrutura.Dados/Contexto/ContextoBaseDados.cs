@@ -16,6 +16,8 @@ namespace Desafio.Infraestrutura.Dados.Contexto
         }
         protected override void OnModelCreating(ModelBuilder modelBuilder)
         {
+            modelBuilder.HasDefaultSchema("Desafio");
+
             modelBuilder.ApplyConfiguration(new SalaMap());
             modelBuilder.ApplyConfiguration(new TipoSalaMap());
             modelBuilder.ApplyConfiguration(new TamanhoSalaMap());

@@ -9,6 +9,7 @@ namespace Desafio.Dominio.Contratos
     [Serializable]
     public class SalaBase
     {
+        public int Id { get; set; }
         [JsonProperty(PropertyName = "cod_sala")]
         public string CodigoSala { get; set; }
 

@@ -20,16 +20,38 @@ namespace Desafio.Dominio.Contratos
             };
         }
 
-        public static Sala Map(SalaBase sala)
+        public static Sala Map(SalaBase sala, TipoSala tipo, TamanhoSala tamanho)
         {
-            return new Sala
+            if (sala.Id > 0)
             {
-                CodigoSala = sala.CodigoSala,
-                NomeSala = sala.NomeSala,
-                OrdemMatriz = sala.OrdemMatriz,
-                TipoSala = sala.TipoSala.de
-                TamanhoSala = sala.TamanhoSala.DescricaoTamanhoSala
-            };
+                return new Sala
+                {
+                    IdSala = sala.Id,
+                    CodigoSala = sala.CodigoSala,
+                    NomeSala = sala.NomeSala,
+                    OrdemMatriz = sala.OrdemMatriz,
+                    IdTipoSala = tipo.IdTipoSala,
+                    IdTamanhoSala = tamanho.IdTamanhoSala,
+                    TipoSala = tipo,
+                    TamanhoSala = tamanho
+                };
+            }
+            else
+            {
+                return new Sala
+                {
+
+                    CodigoSala = sala.CodigoSala,
+                    NomeSala = sala.NomeSala,
+                    OrdemMatriz = sala.OrdemMatriz,
+                    IdTipoSala = tipo.IdTipoSala,
+                    IdTamanhoSala = tamanho.IdTamanhoSala,
+                    TipoSala = tipo,
+                    TamanhoSala = tamanho
+                };
+            }
+
+
         }
     }
 }
