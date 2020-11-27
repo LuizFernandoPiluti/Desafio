@@ -1,8 +1,10 @@
 {
   "version": 2,
-  "dgSpecHash": "tCQJhcnt8bxp6YNVXFDCsnSDvtaoS4VvUfYvzOphtfwbwH9/xs9H2zHesWwHERgQp485Zk0d8ZOcZnH/AFXY7w==",
+  "dgSpecHash": "yQp2ECOSK/jXnlxZqiSBCJFe0irFWt3UgBPUCxtvFk/Wo/5fBlUVh6cGmyijVVOj0Kf92jwHGld8N8uyNvbIaQ==",
   "success": true,
   "projectFilePath": "D:\\Projetos\\Desafio\\Desafio\\Desafio.Dominio\\Desafio.Dominio.csproj",
-  "expectedPackageFiles": [],
+  "expectedPackageFiles": [
+    "C:\\Users\\Piluti\\.nuget\\packages\\newtonsoft.json\\12.0.3\\newtonsoft.json.12.0.3.nupkg.sha512"
+  ],
   "logs": []
 }

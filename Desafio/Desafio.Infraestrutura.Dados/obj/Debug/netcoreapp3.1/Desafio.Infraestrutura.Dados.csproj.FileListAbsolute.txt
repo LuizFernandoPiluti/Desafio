@@ -1,0 +1,12 @@
+D:\Projetos\Desafio\Desafio\Desafio.Infraestrutura.Dados\bin\Debug\netcoreapp3.1\Desafio.Infraestrutura.Dados.deps.json
+D:\Projetos\Desafio\Desafio\Desafio.Infraestrutura.Dados\bin\Debug\netcoreapp3.1\Desafio.Infraestrutura.Dados.dll
+D:\Projetos\Desafio\Desafio\Desafio.Infraestrutura.Dados\bin\Debug\netcoreapp3.1\Desafio.Dominio.dll
+D:\Projetos\Desafio\Desafio\Desafio.Infraestrutura.Dados\bin\Debug\netcoreapp3.1\Desafio.Dominio.pdb
+D:\Projetos\Desafio\Desafio\Desafio.Infraestrutura.Dados\obj\Debug\netcoreapp3.1\Desafio.Infraestrutura.Dados.csprojAssemblyReference.cache
+D:\Projetos\Desafio\Desafio\Desafio.Infraestrutura.Dados\obj\Debug\netcoreapp3.1\Desafio.Infraestrutura.Dados.AssemblyInfoInputs.cache
+D:\Projetos\Desafio\Desafio\Desafio.Infraestrutura.Dados\obj\Debug\netcoreapp3.1\Desafio.Infraestrutura.Dados.AssemblyInfo.cs
+D:\Projetos\Desafio\Desafio\Desafio.Infraestrutura.Dados\obj\Debug\netcoreapp3.1\Desafio.Infraestrutura.Dados.csproj.CopyComplete
+D:\Projetos\Desafio\Desafio\Desafio.Infraestrutura.Dados\bin\Debug\netcoreapp3.1\Desafio.Infraestrutura.Dados.pdb
+D:\Projetos\Desafio\Desafio\Desafio.Infraestrutura.Dados\obj\Debug\netcoreapp3.1\Desafio.Infraestrutura.Dados.csproj.CoreCompileInputs.cache
+D:\Projetos\Desafio\Desafio\Desafio.Infraestrutura.Dados\obj\Debug\netcoreapp3.1\Desafio.Infraestrutura.Dados.dll
+D:\Projetos\Desafio\Desafio\Desafio.Infraestrutura.Dados\obj\Debug\netcoreapp3.1\Desafio.Infraestrutura.Dados.pdb

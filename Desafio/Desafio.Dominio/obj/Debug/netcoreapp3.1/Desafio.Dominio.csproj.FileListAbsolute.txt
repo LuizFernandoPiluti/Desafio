@@ -1,8 +1,8 @@
 D:\Projetos\Desafio\Desafio\Desafio.Dominio\bin\Debug\netcoreapp3.1\Desafio.Dominio.deps.json
 D:\Projetos\Desafio\Desafio\Desafio.Dominio\bin\Debug\netcoreapp3.1\Desafio.Dominio.dll
 D:\Projetos\Desafio\Desafio\Desafio.Dominio\bin\Debug\netcoreapp3.1\Desafio.Dominio.pdb
-D:\Projetos\Desafio\Desafio\Desafio.Dominio\obj\Debug\netcoreapp3.1\Desafio.Dominio.csproj.CoreCompileInputs.cache
 D:\Projetos\Desafio\Desafio\Desafio.Dominio\obj\Debug\netcoreapp3.1\Desafio.Dominio.AssemblyInfoInputs.cache
 D:\Projetos\Desafio\Desafio\Desafio.Dominio\obj\Debug\netcoreapp3.1\Desafio.Dominio.AssemblyInfo.cs
 D:\Projetos\Desafio\Desafio\Desafio.Dominio\obj\Debug\netcoreapp3.1\Desafio.Dominio.dll
 D:\Projetos\Desafio\Desafio\Desafio.Dominio\obj\Debug\netcoreapp3.1\Desafio.Dominio.pdb
+D:\Projetos\Desafio\Desafio\Desafio.Dominio\obj\Debug\netcoreapp3.1\Desafio.Dominio.csprojAssemblyReference.cache

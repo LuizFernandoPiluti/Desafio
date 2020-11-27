@@ -26,6 +26,7 @@ namespace Desafio.Apresentacao.WebApi
         public void ConfigureServices(IServiceCollection services)
         {
             services.AddControllers();
+            services.AddSwaggerGen();
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
@@ -35,6 +36,12 @@ namespace Desafio.Apresentacao.WebApi
             {
                 app.UseDeveloperExceptionPage();
             }
+
+            app.UseSwagger();
+            app.UseSwaggerUI(c =>  
+            {
+                c.SwaggerEndpoint("/swagger/v1/swagger.json", "Desafio 1.0");
+            });
 
             app.UseHttpsRedirection();
 
@@ -46,6 +53,8 @@ namespace Desafio.Apresentacao.WebApi
             {
                 endpoints.MapControllers();
             });
+           
+
         }
     }
 }
