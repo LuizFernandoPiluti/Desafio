@@ -36,7 +36,7 @@ namespace Desafio.Infraestrutura.Dados.Contexto
 
             ;
 
-           optionsBuider.UseSqlServer(config.GetConnectionString("CentralSistemas"));
+           optionsBuider.UseSqlServer(config.GetConnectionString("ConnDesafio"));
 
         }
 
