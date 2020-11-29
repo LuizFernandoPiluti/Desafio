@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "dgSpecHash": "quxiB0DTEVbNvjtjbAJonbjWQnI8n4m5fsm6gD6XkscNK6D9+X7Xkke6K9tCsNWCXmo0cR5djV6ZnZve94e34w==",
+  "dgSpecHash": "iY3soHHFN3xUArJR0UQmgXJICHDxMYi1tVp0L/Y0X2VoxyfXfAuNH25xIDTrv7MAWwmQhNPF3j5CGMUS6B0dTA==",
   "success": true,
   "projectFilePath": "D:\\Projetos\\Desafio\\Desafio\\Desafio.Infraestrutura.Migrations\\Desafio.Infraestrutura.Migrations.csproj",
   "expectedPackageFiles": [
@@ -47,6 +47,7 @@
     "C:\\Users\\Piluti\\.nuget\\packages\\microsoft.netcore.platforms\\3.1.0\\microsoft.netcore.platforms.3.1.0.nupkg.sha512",
     "C:\\Users\\Piluti\\.nuget\\packages\\microsoft.netcore.targets\\1.1.3\\microsoft.netcore.targets.1.1.3.nupkg.sha512",
     "C:\\Users\\Piluti\\.nuget\\packages\\microsoft.openapi\\1.2.3\\microsoft.openapi.1.2.3.nupkg.sha512",
+    "C:\\Users\\Piluti\\.nuget\\packages\\microsoft.visualstudio.azure.containers.tools.targets\\1.10.8\\microsoft.visualstudio.azure.containers.tools.targets.1.10.8.nupkg.sha512",
     "C:\\Users\\Piluti\\.nuget\\packages\\microsoft.visualstudio.web.codegeneration\\3.1.4\\microsoft.visualstudio.web.codegeneration.3.1.4.nupkg.sha512",
     "C:\\Users\\Piluti\\.nuget\\packages\\microsoft.visualstudio.web.codegeneration.contracts\\3.1.4\\microsoft.visualstudio.web.codegeneration.contracts.3.1.4.nupkg.sha512",
     "C:\\Users\\Piluti\\.nuget\\packages\\microsoft.visualstudio.web.codegeneration.core\\3.1.4\\microsoft.visualstudio.web.codegeneration.core.3.1.4.nupkg.sha512",

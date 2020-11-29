@@ -1,0 +1,25 @@
+#See https://aka.ms/containerfastmode to understand how Visual Studio uses this Dockerfile to build your images for faster debugging.
+
+FROM mcr.microsoft.com/dotnet/core/aspnet:3.1-buster-slim AS base
+WORKDIR /app
+EXPOSE 80
+EXPOSE 443
+
+FROM mcr.microsoft.com/dotnet/core/sdk:3.1-buster AS build
+WORKDIR /src
+COPY ["Desafio.Apresentacao.WebApi/Desafio.Apresentacao.WebApi.csproj", "Desafio.Apresentacao.WebApi/"]
+COPY ["Desafio.Dominio/Desafio.Dominio.csproj", "Desafio.Dominio/"]
+COPY ["Desafio.Aplicacao/Desafio.Aplicacao.csproj", "Desafio.Aplicacao/"]
+COPY ["Desafio.Infraestrutura.Dados/Desafio.Infraestrutura.Dados.csproj", "Desafio.Infraestrutura.Dados/"]
+RUN dotnet restore "Desafio.Apresentacao.WebApi/Desafio.Apresentacao.WebApi.csproj"
+COPY . .
+WORKDIR "/src/Desafio.Apresentacao.WebApi"
+RUN dotnet build "Desafio.Apresentacao.WebApi.csproj" -c Release -o /app/build
+
+FROM build AS publish
+RUN dotnet publish "Desafio.Apresentacao.WebApi.csproj" -c Release -o /app/publish
+
+FROM base AS final
+WORKDIR /app
+COPY --from=publish /app/publish .
+ENTRYPOINT ["dotnet", "Desafio.Apresentacao.WebApi.dll"]
