@@ -9,14 +9,14 @@ using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 namespace Desafio.Infraestrutura.Dados.Migrations
 {
     [DbContext(typeof(ContextoBaseDados))]
-    [Migration("20201127205246_inicial")]
+    [Migration("20201129173602_inicial")]
     partial class inicial
     {
         protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {
 #pragma warning disable 612, 618
             modelBuilder
-                .HasDefaultSchema("Desafio")
+                .HasDefaultSchema("sqlPilutiAzure")
                 .UseIdentityColumns()
                 .HasAnnotation("Relational:MaxIdentifierLength", 128)
                 .HasAnnotation("ProductVersion", "5.0.0");

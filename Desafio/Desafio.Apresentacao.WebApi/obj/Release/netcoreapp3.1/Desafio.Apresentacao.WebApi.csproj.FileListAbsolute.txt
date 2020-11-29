@@ -139,6 +139,9 @@ D:\Projetos\Desafio\Desafio\Desafio.Apresentacao.WebApi\bin\Release\netcoreapp3.
 D:\Projetos\Desafio\Desafio\Desafio.Apresentacao.WebApi\bin\Release\netcoreapp3.1\Desafio.Dominio.pdb
 D:\Projetos\Desafio\Desafio\Desafio.Apresentacao.WebApi\bin\Release\netcoreapp3.1\Desafio.Infraestrutura.Dados.pdb
 D:\Projetos\Desafio\Desafio\Desafio.Apresentacao.WebApi\obj\Release\netcoreapp3.1\Desafio.Apresentacao.WebApi.csprojAssemblyReference.cache
+D:\Projetos\Desafio\Desafio\Desafio.Apresentacao.WebApi\obj\Release\netcoreapp3.1\Desafio.Apresentacao.WebApi.csproj.CoreCompileInputs.cache
+D:\Projetos\Desafio\Desafio\Desafio.Apresentacao.WebApi\obj\Release\netcoreapp3.1\Desafio.Apresentacao.WebApi.MvcApplicationPartsAssemblyInfo.cs
+D:\Projetos\Desafio\Desafio\Desafio.Apresentacao.WebApi\obj\Release\netcoreapp3.1\Desafio.Apresentacao.WebApi.MvcApplicationPartsAssemblyInfo.cache
 D:\Projetos\Desafio\Desafio\Desafio.Apresentacao.WebApi\obj\Release\netcoreapp3.1\Desafio.Apresentacao.WebApi.AssemblyInfoInputs.cache
 D:\Projetos\Desafio\Desafio\Desafio.Apresentacao.WebApi\obj\Release\netcoreapp3.1\Desafio.Apresentacao.WebApi.AssemblyInfo.cs
 D:\Projetos\Desafio\Desafio\Desafio.Apresentacao.WebApi\obj\Release\netcoreapp3.1\Desafio.Apresentacao.WebApi.RazorTargetAssemblyInfo.cache
@@ -148,6 +151,3 @@ D:\Projetos\Desafio\Desafio\Desafio.Apresentacao.WebApi\obj\Release\netcoreapp3.
 D:\Projetos\Desafio\Desafio\Desafio.Apresentacao.WebApi\obj\Release\netcoreapp3.1\Desafio.Apresentacao.WebApi.dll
 D:\Projetos\Desafio\Desafio\Desafio.Apresentacao.WebApi\obj\Release\netcoreapp3.1\Desafio.Apresentacao.WebApi.pdb
 D:\Projetos\Desafio\Desafio\Desafio.Apresentacao.WebApi\obj\Release\netcoreapp3.1\Desafio.Apresentacao.WebApi.genruntimeconfig.cache
-D:\Projetos\Desafio\Desafio\Desafio.Apresentacao.WebApi\obj\Release\netcoreapp3.1\Desafio.Apresentacao.WebApi.csproj.CoreCompileInputs.cache
-D:\Projetos\Desafio\Desafio\Desafio.Apresentacao.WebApi\obj\Release\netcoreapp3.1\Desafio.Apresentacao.WebApi.MvcApplicationPartsAssemblyInfo.cs
-D:\Projetos\Desafio\Desafio\Desafio.Apresentacao.WebApi\obj\Release\netcoreapp3.1\Desafio.Apresentacao.WebApi.MvcApplicationPartsAssemblyInfo.cache

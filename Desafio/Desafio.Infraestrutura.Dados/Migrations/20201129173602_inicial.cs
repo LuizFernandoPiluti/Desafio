@@ -7,11 +7,11 @@ namespace Desafio.Infraestrutura.Dados.Migrations
         protected override void Up(MigrationBuilder migrationBuilder)
         {
             migrationBuilder.EnsureSchema(
-                name: "Desafio");
+                name: "sqlPilutiAzure");
 
             migrationBuilder.CreateTable(
                 name: "sala",
-                schema: "Desafio",
+                schema: "sqlPilutiAzure",
                 columns: table => new
                 {
                     id_sala = table.Column<int>(type: "int", nullable: false)
@@ -29,7 +29,7 @@ namespace Desafio.Infraestrutura.Dados.Migrations
 
             migrationBuilder.CreateTable(
                 name: "tamanho_sala",
-                schema: "Desafio",
+                schema: "sqlPilutiAzure",
                 columns: table => new
                 {
                     id_tamanho_sala = table.Column<int>(type: "int", nullable: false)
@@ -43,7 +43,7 @@ namespace Desafio.Infraestrutura.Dados.Migrations
 
             migrationBuilder.CreateTable(
                 name: "tipo_sala",
-                schema: "Desafio",
+                schema: "sqlPilutiAzure",
                 columns: table => new
                 {
                     id_sala = table.Column<int>(type: "int", nullable: false)
@@ -60,15 +60,15 @@ namespace Desafio.Infraestrutura.Dados.Migrations
         {
             migrationBuilder.DropTable(
                 name: "sala",
-                schema: "Desafio");
+                schema: "sqlPilutiAzure");
 
             migrationBuilder.DropTable(
                 name: "tamanho_sala",
-                schema: "Desafio");
+                schema: "sqlPilutiAzure");
 
             migrationBuilder.DropTable(
                 name: "tipo_sala",
-                schema: "Desafio");
+                schema: "sqlPilutiAzure");
         }
     }
 }

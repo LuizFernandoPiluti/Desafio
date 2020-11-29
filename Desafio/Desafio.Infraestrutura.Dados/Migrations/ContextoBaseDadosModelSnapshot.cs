@@ -14,7 +14,7 @@ namespace Desafio.Infraestrutura.Dados.Migrations
         {
 #pragma warning disable 612, 618
             modelBuilder
-                .HasDefaultSchema("Desafio")
+                .HasDefaultSchema("sqlPilutiAzure")
                 .UseIdentityColumns()
                 .HasAnnotation("Relational:MaxIdentifierLength", 128)
                 .HasAnnotation("ProductVersion", "5.0.0");

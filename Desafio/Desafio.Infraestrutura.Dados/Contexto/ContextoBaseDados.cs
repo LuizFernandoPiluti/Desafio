@@ -16,7 +16,7 @@ namespace Desafio.Infraestrutura.Dados.Contexto
         }
         protected override void OnModelCreating(ModelBuilder modelBuilder)
         {
-            modelBuilder.HasDefaultSchema("Desafio");
+            modelBuilder.HasDefaultSchema("sqlPilutiAzure");
 
             modelBuilder.ApplyConfiguration(new SalaMap());
             modelBuilder.ApplyConfiguration(new TipoSalaMap());
